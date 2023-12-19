@@ -1,0 +1,77 @@
+QUESTION 1:-
+ANS:- Database is an organized collection of structured information at the server or storage devices. 
+SQL stands for structured query language and it is a relational database whereas NoSQL are non-relational databse they have dynamic schemas. NoSQL databse are easy to use as compared to SQL database.
+
+QUESTION 2:-
+ANS:- DDL stands fro Data Defintion Languages. These are used to define the structure/skeleton of the database. There are different 
+types of DDL such as:
+(i). CREATE - It is used to create a table/schema in the database.
+        e.g- CREATE TABLE tablename
+(ii). DROP - It is a command which is used to delete the entire record of the table in other words it delete the all table.
+        e,g - DROP TABLE tablename
+(iii). ALTER - This command is used to update, modify, add, delete the columns of the existing table in the database.
+        e.g - ALTER TABLE tablename
+        ADD column_name datatype
+(iv). TRUNCATE - This command is used to delete the entire data of the table without deleting the structure of the table.
+        e.g - TRUNCATE TABLE categories.
+
+
+QUESTION 3:-
+ANS:- DML stands for Data Manipulation Languages. They are used to manipulate the data in the table such as insert, delete, update.
+
+types:-
+(i). INSERT - It is used to insert the data in the column of the table.
+        e.g - INSERT INTO tablename (C1,C2,C3.......Cn)
+              VALUES (V1,V2,V3.....Vn)
+(ii). UPDATE - This command is used to modify the existing data of the table.
+        e.g - UPDATE tablename
+              SET C1 = V1, C2 = V2
+              WHERE condition
+(iii). DELETE - It is used to delete the existing record of the table.
+        e.g - DELETE FROM tablename WHERE condition
+
+
+QUESTION 4:-
+ANS:- DQL stands for Data Query Languages. They are used to perform the query on the database. 
+(i) SELECT - This command is used to select the data from the databse.
+        e.g - SELECT Name FROM Table_1
+
+
+QUESTION 5:-
+ANS:- PRIMARY KEY -> A primary key is a unique value that identifies a row in a table. A table can have only one primary key.
+
+FOREIGN KEY -> A foriegn key is a column or set columns in one table that refers to a column or set of columns in another table.
+A table can have multiple foreign key.
+
+QUESTION 6:-
+ANS:- 
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="abc",
+  password="password"
+)
+
+mycursor = mydb.cursor()
+
+cursor() -> The cursor() function in Python is used to create a cursor object. A cursor object is used to execute SQL statements
+and fetch data from the result sets of the queries. It is an object that is used to make the connection for executing SQL
+queries. It acts as middleware between SQLite database.
+
+execute() -> This function is used to perform the commands of the SQL. This function helps to execute the commands of the SQL 
+from the pyhton code itself we don't need the SQL software to execute SQL commands.
+
+QUESTION 6:-
+ANS:-
+The order of execution of SQL clauses in an SQL query is as follows:
+1. FROM: clause
+2. WHERE: clause
+3. GROUP BY: clause
+4. HAVING: clause
+5. SELECT: clause
+6. ORDER BY: clause
+7. LIMIT: clause
+
+
+
